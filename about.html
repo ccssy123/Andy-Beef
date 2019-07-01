@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1, maximum-scale=2">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="vender/OwlCarousel2-2.3.4/owl.carousel.min.css">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+    .zoom{
+       background-image: url(images/about-bg-2.png); 
+       height: 400px;
+       background-position: center;
+    }
+    .wrepper {
+        overflow: hidden;
+    }
+
+
+
+    .header.active {
+        background-color: rgba(0, 0, 0, 1);
+        border-bottom: 1px solid rgba(256, 256, 256, 0);
+        transition: 1s all;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1200;
+    }
+
+    @media(max-width: 414px) {
+        .header {
+            background-color: #000;
+        }
+    }
+
+    .nav-item {}
+
+    .nav-link:hover {
+        color: #fff !important;
+        text-shadow: 2px 2px 4px yellow;
+        transition: 1s all;
+    }
+
+    
+
+    
+
+    /* owl-carousel */
+    .owl-theme .owl-dots {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+        .owl-theme .owl-dots {
+            margin-bottom: 5px;
+        }
+    }
+
+    .owl-theme .owl-dots .owl-dot {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #ccc;
+        outline: none;
+        margin: 0 4px;
+    }
+
+    .owl-theme .owl-dots .owl-dot.active {
+        background-color: #000;
+    }
+
+    .owl-theme .owl-nav {
+        position: absolute;
+        top: calc((100% - 106px) / 2 - 20px);
+        width: 100%;
+    }
+
+    .owl-theme .owl-nav button.owl-prev,
+    .owl-theme .owl-nav button.owl-next {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #5b3414 !important;
+        outline: none;
+        font-size: 40px !important;
+        color: #fff !important;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+        position: absolute;
+        opacity: 1;
+        transition: all 0.3s;
+        margin-bottom: 20px;
+    }
+
+    .owl-theme:hover .owl-nav button.owl-prev,
+    .owl-theme:hover .owl-nav button.owl-next {
+        background-color: #f26d15 !important;
+    }
+
+    .owl-theme .owl-nav button.owl-prev {
+        left: -20px;
+    }
+
+    @media (max-width: 768px) {
+        .owl-theme .owl-nav button.owl-prev {
+            left: 5px;
+            opacity: 1;
+        }
+    }
+
+    .owl-theme .owl-nav button.owl-next {
+        right: -20px;
+    }
+
+    @media (max-width: 768px) {
+        .owl-theme .owl-nav button.owl-next {
+            right: 5px;
+            opacity: 1;
+        }
+    }
+    .title-p{
+        margin-top: 90px;
+    }
+    @media (max-width: 1024px) {
+        .title-p{
+           margin-top: 40px;
+        }
+    }
+    @media (max-width: 1024px) {
+        .title-p{
+           margin-top: 0px;
+        }
+    }
+    @media (max-width: 414px) {
+        .title-p{
+           margin-top: 20px;
+        }
+    }
+    @media (max-width: 414px) {
+        .zoom h3{
+           font-size: 40px!important;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="wrepper">
+        <section class="zoom">
+            <!-----------header----------------->
+            <header class="header">
+                <div class="container">
+                    <nav class="navbar navbar-expand-md  navbar-dark">
+                        <!-- Brand -->
+                        <a class="navbar-brand" href="index.html">
+                            <img style="width: 150px;height: auto;" class="logo" src="images/logo.png">
+                        </a>
+                        <!-- Toggler/collapsibe Button -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- Navbar links -->
+                        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">店家關於</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="menu.html">菜色介紹</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">聯絡我們</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    </nav>
+                </div>
+            </header>
+            <!--------------banner----------------->
+         <h3 style="text-align: center;font-size: 60px;color: #fff;line-height:400px;text-shadow: 2px 2px 4px rgba(0,0,0,0.4);">- Store about -</h3>
+        </section>
+        <!--------------banner----------------->
+        <div class="main">
+            <!---------------Latest news--------------------->
+            <div class="Latest-news hero">
+                <div class="container">
+                    <h1 class="title">店家關於</h1>
+                    <p class="subtitle">Store about</p>
+                    <div class="line"></div>
+                    <div class="row" style="margin-top: 30px;">
+                    	<div class="col-sm">
+                    		<img style="width: 100%;height: 100;max-width: auto;max-height: auto;"src="images/store-about.jpeg">
+                    	</div>
+                    	<div class="col-sm">
+                    		<p class="title-p" style="font-size: 18px;">牛排餐廳全新感受好吃大盎司牛排 2010年專精於牛排料理的老闆於台北地區成立了第一間大盎司台北牛排餐廳「Andy Beef」。</p> 
+                    			<p style="font-size: 18px;">坐落於台北市大安區復興南路一段的Andy Beef，除了提供優美舒適的用餐環境外更顛覆了傳統吃到飽牛排餐廳的用餐經驗，老闆說我們把一般吃到飽餐廳多餘的附加食材成本投入在我們的牛排主餐中，讓顧客吃到真材實料的優質排餐。</p>
+                    	</div>
+                    </div>
+                    <div class="row" style="margin-top: 50px;">
+                    	<div class="col-sm">
+                    		<h3 style="text-align: center;color: #5b3414">-美味．料理-</h3>
+                    		<p style="text-align: center;">我們以義大利料理為底，並融合歐美料理主題，烹調出最符合東方人口味的餐點。</p>
+                    	</div>
+                    	<div class="col-sm">
+                    		<h3 style="text-align: center;color: #5b3414">-美味．安全-</h3>
+                    		<p style="text-align: center;">整個產品供應鏈均嚴格把關，符合法規要求並優先選用 ISO 認證食材，享用美食無負擔。</p>
+                    	</div>
+                    	<div class="col-sm">
+                    		<h3 style="text-align: center;color: #5b3414">-美味．異國-</h3>
+                    		<p style="text-align: center;">徜徉異國鄉村風情，石砌棟樑、紅磚牆柱、鄉村碎花、原木桌椅、彩繪貝殼、鑄鐵吊燈，加上一點「Old Fashion」的氛圍，溫馨感升級，帶給每一位前來用餐顧客與眾不同的用餐感受。</p>
+                    	</div>
+                    </div>
+                </div>
+            </div>
+       
+        <!----------------map------------------->
+        <div style=""class="map">
+        	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d903.6739320459013!2d121.54370042920749!3d25.044398014012234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abdbb5338b3f%3A0x9a93b788f5aa33c3!2zMTA25Y-w5YyX5biC5aSn5a6J5Y2A5b6p6IiI5Y2X6Lev5LiA5q61Nznlt7cy6Jmf!5e0!3m2!1szh-TW!2stw!4v1561776237945!5m2!1szh-TW!2stw" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <!------------------footer------------------->
+        <footer class="footer hero-4">
+        	<div class="container">
+        		<div class="paper">
+        			<div class="paper-1">
+        			<p>台北市大安區復興南路一段79巷2號</p>
+        			<p style="margin-bottom: 0px;">02-4568-4545</p>
+        			</div>
+        		</div>
+        		<p style="margin-top: 30px;text-align:center;">Copyright © 2019 Andy Beef All Right Received. | 版權所有 © Andy Beef有限公司</p>
+        	</div>
+        </footer>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js
+"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="vender/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
+<script type="text/javascript">
+var layer1 = document.getElementById('layer1')
+scroll = window.pageYOffset;
+document.addEventListener('scroll', function(e) {
+    var offset = window.pageYOffset;
+    scroll = offset;
+    layer1.style.width = (100 + scroll / 5) + '%';
+});
+
+var layer2 = document.getElementById('layer2')
+scroll = window.pageYOffset;
+document.addEventListener('scroll', function(e) {
+    var offset = window.pageYOffset;
+    scroll = offset;
+    layer2.style.width = (100 + scroll / 5) + '%';
+
+    layer2.style.left = scroll / 50 + '%';
+});
+
+var text = document.getElementById('text')
+scroll = window.pageYOffset;
+document.addEventListener('scroll', function(e) {
+    var offset = window.pageYOffset;
+    scroll = offset;
+    layer2.style.width = (100 + scroll / 5) + '%';
+
+    text.style.top = -scroll / 20 + '%';
+});
+
+// 導覽列變化
+$(window).scroll(function() {
+    var screenheight = $(this).height(); // 抓取視窗高度
+    var scrolledpx = $(this).scrollTop(); // 抓取當前視窗距離最上方的距離(滾動距離)
+    // 當滾動超過視窗高度的一半
+    if (scrolledpx >= screenheight / 7 - 100) {
+        $('.header').addClass('active'); // 選取導覽列加上 active
+    } else {
+        $('.header').removeClass('active'); // 選取導覽列清除 active
+    }
+})
+
+$('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 1
+        },
+        1000: {
+            items: 3,
+            margin: 10
+        }
+    }
+})
+</script>
+
+</html>
