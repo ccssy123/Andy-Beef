@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="vender/OwlCarousel2-2.3.4/owl.carousel.min.css">
-
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 <head>
     <meta charset="UTF-8">
@@ -173,17 +173,21 @@
                 </div>
             </header>
             <!--------------banner----------------->
-         <h3 style="text-align: center;font-size: 60px;color: #fff;line-height:400px;text-shadow: 2px 2px 4px rgba(0,0,0,0.4);">- Contact us -</h3>
+         <h3 style="text-align: center;font-size: 60px;color: #fff;line-height:400px;text-shadow: 2px 2px 4px rgba(0,0,0,0.4);" data-aos="zoom-out-up" data-aos-offset="100"
+     data-aos-easing="ease-in-sine" data-aos-duration="1000">- Contact us -</h3>
         </section>
         <!--------------banner----------------->
         <div class="main">
             <!---------------Latest news--------------------->
             <div class="Latest-news hero">
                 <div class="container">
-                    <h1 class="title">聯絡我們</h1>
-                    <p class="subtitle">Contact us</p>
+                    <h1 class="title" data-aos="zoom-out-up" data-aos-offset="200" data-aos-delay="550"
+     data-aos-easing="ease-in-sine" data-aos-duration="1000">聯絡我們</h1>
+                    <p class="subtitle" data-aos="zoom-out-up" data-aos-offset="200" data-aos-delay="550"
+     data-aos-easing="ease-in-sine" data-aos-duration="1000">Contact us</p>
                     <div class="line"></div>
-                    <form style="margin-top: 30px;"action="" method="post" name="myform" onSubmit="return check(this);">
+                    <form style="margin-top: 30px;"action="" method="post" name="myform" onSubmit="return check(this);" data-aos="zoom-out-up" data-aos-offset="200" data-aos-delay="550"
+     data-aos-easing="ease-in-sine" data-aos-duration="1000">
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">姓名 <font color="#d60000">*</font></label>
                                     <input style="float: left;margin-bottom: 20px;"required="required" required="required" type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
@@ -216,7 +220,8 @@
         <!------------------footer------------------->
         <footer class="footer hero-4">
         	<div class="container">
-        		<div class="paper">
+        		<div class="paper" data-aos="zoom-out-up" data-aos-offset="100"
+     data-aos-easing="ease-in-sine" data-aos-duration="1000">
         			<div class="paper-1">
         			<p>台北市大安區復興南路一段79巷2號</p>
         			<p style="margin-bottom: 0px;">02-4568-4545</p>
@@ -230,10 +235,14 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js
 "></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="vender/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
 <script type="text/javascript">
+        // 
+    AOS.init();
+    // 
 var layer1 = document.getElementById('layer1')
 scroll = window.pageYOffset;
 document.addEventListener('scroll', function(e) {

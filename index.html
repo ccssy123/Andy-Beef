@@ -4,12 +4,16 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="vender/OwlCarousel2-2.3.4/owl.carousel.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
     <style type="text/css">
+    
+
+
     .wrepper {
         overflow: hidden;
     }
@@ -192,9 +196,10 @@
         <!--------------banner----------------->
         <div class="main">
             <!---------------Latest news--------------------->
-            <div class="Latest-news hero">
+            <div class="Latest-news hero " data-aos="zoom-in-right" data-aos-offset="100"
+     data-aos-easing="ease-in-sine" data-aos-duration="1000">
                 <div class="container">
-                    <h1 class="title">最新消息</h1>
+                    <h1 class="title" >最新消息</h1>
                     <p class="subtitle">Latest news</p>
                     <div class="line"></div>
                     <div style="margin-top: 70px;" class="owl-carousel owl-theme js-fadeInUp">
@@ -249,13 +254,15 @@ text-justify:inter-ideograph;" class="content">增長肌肉它對增長肌肉、
         <!-------------------slogan-------------------->
         <div class="slogan hero-2">
         	<div class="mask"></div>
-        	<div class="container">
+        	<div class="container" data-aos="zoom-out-up" data-aos-offset="100"
+     data-aos-easing="ease-in-sine" data-aos-duration="1000">
         		<img style="width: 300px;height: 346px;display: block;margin:0 auto;"src="images/logo-2.png">
         		<p style="text-align: center;font-size: 30px;color: #fff;margin-bottom: 0px;text-shadow: 2px 2px 4px #000;">客人留下最美好的印象</p>
         	</div>
         </div>
         <!---------Latest variety----------->
-        <div class="latest-variety bg hero-3">
+        <div class="latest-variety bg hero-3" data-aos="zoom-in-left" data-aos-offset="100"
+     data-aos-easing="ease-in-sine" data-aos-duration="1500">
         	<div class="container">
         		<h1 class="title">最新菜色</h1>
                     <p class="subtitle">Latest variety</p>
@@ -353,7 +360,8 @@ text-justify:inter-ideograph;" class="content">使用嫩肩牛排上搭配香濃
         <!------------------footer------------------->
         <footer class="footer hero-4">
         	<div class="container">
-        		<div class="paper">
+        		<div class="paper" data-aos="zoom-out-up" data-aos-offset="100"
+     data-aos-easing="ease-in-sine" data-aos-duration="1000">
         			<div class="paper-1">
         			<p>台北市大安區復興南路一段79巷2號</p>
         			<p style="margin-bottom: 0px;">02-4568-4545</p>
@@ -367,11 +375,17 @@ text-justify:inter-ideograph;" class="content">使用嫩肩牛排上搭配香濃
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js
 "></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="vender/rellax-master/rellax.min.js">
+<link rel="stylesheet" type="text/css" href="vender/scrollreveal-master/scrollreveal.min.js">
 <script src="vender/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
+
 <script type="text/javascript">
+    // 
+    AOS.init();
+    // 
 var layer1 = document.getElementById('layer1')
 scroll = window.pageYOffset;
 document.addEventListener('scroll', function(e) {
@@ -430,6 +444,11 @@ $('.owl-carousel').owlCarousel({
     }
 })
 //
+
+
+
+
+//
 window.sr = ScrollReveal({
         mobile: false,
         duration: 800,
@@ -453,6 +472,33 @@ window.sr = ScrollReveal({
     $('.js-one-page-nav').onePageNav({
         currentClass: 'active'
     });
+    
 </script>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
